@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Pagina Home</h1>
+    <h1>Pagina Contato</h1>
     <p>{{api}}</p>
   </div>
 </template>
@@ -9,10 +9,10 @@
 import fazerFetchDaAPI from "@/mixins/fazerFetchDaAPI.js"
 
 export default {
-  name: 'HomeView',
+  name: 'ContatoView',
   mixins: [fazerFetchDaAPI],
   created() {
-    this.fazerFetchDaAPI("/home");
+    this.fazerFetchDaAPI("/contato");
   }
 }
 </script>
